@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<title>Steve's Ice Cream Truck</title>
+</head>
+
+<body>
+	<!-- row 1: navigation -->
+	<div class="row">
+		<nav class="navbar navbar-inverse" role="navigation">
+			<p class="navbar-text navbar-right hidden-xs">Hours of Operation: Tue-Sun 12:00-9:00pm</p>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li class="active"><a href="index.html" title="Home Page">Home</a></li>
+					<li><a href="menu.html" title="Menu">Menu</a></li>
+					<li><a href="route.html" title="Route">Route</a></li>
+				</ul>
+
+			</div>
+
+		</nav>
+	</div>
+		
+	<!-- row 2: header -->
+	<header class = "jumbotron">
+		<h1>Steve's Ice Cream Truck <br><small>All-American Ice Cream</small></h1>
+	</header>
+		
+	<!-- row 3: Main content -->
+	<div class="row">
+		<article class="col-xs-12 col-sm-8 col-lg-6 col-lg-push-3">
+			<h2>Welcome to the Neighborhood</h2>
+				<p>Ever had a craving for good old-fashioned ice cream? Are your local ice cream stores selling too many weird flavors that make your taste buds shrink at the thought of them? At Steve's, we believe in the classics, and put all of our efforts into making the best homemade ice cream you've ever tasted!</p>
+				<p>We operate mainly out of our truck, which circles around the Cambridge area, between Harvard University and MIT. See our <a href="route.html">route</a> to see where we stop.</p>
+				<p>In addition to our truck, we have a brand-new physical location in Independence, MA. Although we used to make all of our ice cream on the truck, this is now where all production happens. New batches are sent out to Cambridge daily.</p>
+				<p>
+				Our menu offers sundaes and shakes in addition to different flavors:</p>
+				<a href="menu.html" class="btn btn-primary">Menu</a>
+								
+			<h3>Catering</h3>
+				<p>We provide catering services for both large and small events. Everything on our menu is available for catering orders. We'll deliver right to your event, or, come and pick it up yourself. To order, call 555-5555, or fill out an order form from our truck or our store location.</p>
+				<p><button data-target="#catering" class="btn btn-primary" data-toggle="modal">Read More</button></p>
+		</article>
+
+		<aside class="col-xs-6 col-sm-4 col-lg-3 col-lg-pull-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3 class="panel-title">Flavor of the Month: Cinnamon</h3>
+				</div>
+			  	<div class="panel-body">
+			  		<figure><img src="images/cinnamon.jpeg" alt="Cinnamon" class="img-responsive" id="panel-picture">
+			  			<figcaption>For a little sweet spice to go with your cream.</figcaption>
+					</figure>
+			  	</div>
+			</div>
+		</aside>
+
+		<aside class="col-xs-6 col-sm-4 col-lg-3">
+			<h3>Contact</h3>
+				<p>Tel: 555-5555</p>
+				<p>1776 Americas Avenue<br>
+					Independence, MA 55555<br>
+				</p>
+				<p>Hours: Tue-Sun 12:00-9:00pm</p>
+		</aside>
+	</div>
+
+	<!-- row 4: footer -->
+	<footer class="row">
+		<p><small>Made by Lauren Inch for Harvard Extension School class DGMD E-20, Assignment 1</small></p>
+		<p><small>Images via Google Image Search from various hosts including <a href="http://www.chow.com">chow.com</a>, <a href="http://www.tasteofhome.com">tasteofhome.com</a>, and <a href="http://www.playbuzz.com">playbuzz.com</a>. Specific citation in html code.</small></p>
+	</footer>
+
+<!--modal windows -->
+	<div id="catering" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="catering" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3>Catering</h3>
+			</div>
+			<div class="modal-body">
+				<p>Prices will vary depending on the number of servings requested. Contact us for a specific price.</p>
+				<h4>Sample Order</h4>
+				<p>Ice Cream (any flavor) 1 gallon: $5.29<br>
+				Milkshake (any flavor) 12 people: $35.98<br>
+				Sundae bar 12 people: $32.04</p>
+				<p>To order, call 555-5555, or fill out an order form from our truck or our store location.You will need to provide the following information to place an order:</p>
+				<ul>
+					<li>Name</li>
+					<li>Delivery address</li>
+					<li>Start time of event</li>
+					<li>Requested time of delivery</li>
+					<li>Number of servings</li>
+				</ul>
+				
+			</div>
+			<div class="modal-footer">
+				<button class="btn" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- end modal content -->
+		</div><!-- end modal dialog -->
+	</div><!-- end modal -->
+
+
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>

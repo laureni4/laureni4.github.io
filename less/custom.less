@@ -1,0 +1,95 @@
+/*Tab Styling*/
+.tab-content{
+	border-left: 1px solid @nav-tabs-border-color;
+	border-right: 1px solid @nav-tabs-border-color;
+	border-bottom: 1px solid @nav-tabs-border-color;
+	padding: 10px;
+
+}
+
+.nav-tabs{
+	margin-top: 22px;
+}
+
+
+/*jumbotron styling*/
+.jumbotron{
+	text-align: center;
+	margin-top: -20px;
+	margin-left: -15px;
+	margin-right: -15px;
+	  
+	.container & {
+    border-radius: 0px;
+    }
+}
+
+/*thumbnail styling*/
+.thumbnail {
+  border: 0px;
+ }
+
+/*navbar styling*/
+.navbar{
+	border-radius: 0px;
+	border: 0px;
+}
+
+/*panel styling*/
+.panel {
+  border: 0px;
+  margin-top: 22px;
+}
+
+.panel-heading {
+  border-bottom: 0px;
+}
+
+.panel-title{
+	font-size: ceil(@font-size-h3);
+	text-align: center;
+}
+
+
+/*custom styles*/
+figcaption{
+	padding: 5px;
+	text-align: center;
+	font-style: italic;
+}
+
+h1 small{
+	color: @gray-dark;
+}
+
+body{
+	padding: 0px 15px;
+}
+
+#panel-picture{
+	border-radius: 10px;
+}
+
+footer{
+	padding: 20px 0;
+	margin-top: 20px;
+	background-color: lighten(@brand-secondary, 6%);
+	color: @gray-light;
+	text-align: center;
+}
+
+#ingredients{
+	padding-left: 10px;
+}
+
+#ingredients li{
+	list-style-type: none;
+	
+}
+
+@media screen and (max-width: 768px) {
+    .caption h3, .panel-title{
+        font-size: ceil((@font-size-base * 1.4));;
+    }
+}
+

@@ -1,0 +1,40 @@
+.tab-pane{
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding: 15px;
+}
+
+footer{
+	padding: 2em 0;
+	margin: 3em 0;
+	border-top: 1px solid #ddd;
+	color: #999;
+	text-align: center;
+}
+
+.container .jumbotron{
+	background-color: #FA7080; /*Pale Red*/
+	text-align: center;
+	margin-top: -20px;
+	margin-left: -15px;
+	margin-right: -15px;
+	border-radius: 0px;
+}
+
+.jumbotron h1{
+	color: white;
+	font-style: italic;
+}
+
+.navbar{
+	border-radius: 0px;
+}
+
+.container{
+	background-color: white;
+}
+
+body{
+	background-color: #87CEFA; /*LightSkyBlue*/
+}

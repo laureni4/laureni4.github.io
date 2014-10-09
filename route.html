@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<title>Steve's Ice Cream Truck</title>
+</head>
+
+<body>
+	
+	<!-- row 1: navigation -->
+	<div class="row">
+		<nav class="navbar navbar-inverse" role="navigation">
+			<p class="navbar-text navbar-right hidden-xs">Hours of Operation: Tue-Sun 12:00-9:00pm</p>
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="collapse">
+				<ul class="nav navbar-nav navbar-left">
+					<li><a href="index.html" title="Home Page">Home</a></li>
+					<li><a href="menu.html" title="Menu">Menu</a></li>
+					<li class="active"><a href="route.html" title="Route">Route</a></li>
+				</ul>
+
+			</div>
+
+		</nav>
+	</div>
+		
+	<!-- row 2: header -->
+	<header class = "jumbotron">
+		<h1>Steve's Ice Cream Truck <br><small>All-American Ice Cream</small></h1>
+	</header>
+
+	<!-- row 3: main content -->
+	<div class="row">
+		<article class="col-sm-8 col-md-7">
+			<h2>Route</h2>
+			<p>In addition to our store location at 1776 Americas Avenue, our trucks travel across Cambridge, bringing the goods to you! Circling between Harvard University, MIT, and Porter Square, we serve a large populus, and are looking to expand as well. We have several designated stops on our route:</p>
+				<ol>
+					<li>Harvard University, 12:00-1:00, 6:15-8:00</li>
+					<li>Central Square, 1:15-2:00, 8:15-9:00</li>
+					<li>Portland St./Binney St., 2:15-3:00</li>
+					<li>Somerville Ave/Prospect St., 3:15-4:00</li>
+					<li>Somerville Ave/Lowell St., 4:15-6:00</li>
+				</ol>
+
+			<p>If you live within a one mile radius of our route, we deliver as well. Tel: 555-5555</p>
+			<figure>
+				<img src="images/route.jpg" alt="Vanilla" class="img-responsive"/>
+			</figure>
+		</article>
+
+		<aside class="col-sm-4 col-md-5">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+			    	<h3 class="panel-title">Our Drivers</h3>
+			    </div>
+			  	<div class="panel-body">
+			    	<p>We take care of our drivers, and they take care of you. They're committed to safe driving, and keeping an on-time schedule. Look at the sign outside of our truck to see who's driving today, and meet them by reading their bios here:</p>
+					<p><button data-target="#drivers" class="btn btn-primary" data-toggle="modal">Read More</button></p>
+					<p>Want to become a driver or another part of our staff? Start your career with us today.</p>
+					<a href="#" class="btn btn-primary">Apply for a job</a>
+			  	</div>
+			</div>			
+		</aside>
+	</div>
+
+
+	<!-- row 4: footer -->
+	<footer class="row">
+		<p><small>Made by Lauren Inch for Harvard Extension School class DGMD E-20, Assignment 1</small></p>
+		<p><small>Figure from Google Maps; route created with <a href="http://www.mappedometer.com/">http://www.mappedometer.com</a></small></p>
+	</footer>
+
+<!--modal windows -->
+	<div id="drivers" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="drivers" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h3>Our Drivers</h3>
+			</div>
+			<div class="modal-body">
+				<h4>Matt</h4>
+				<p>Matt's a part-time student at Boston University, studying chemistry and food science. His affair with ice cream began when he was a baby and his older brother dumped a melted gallon of vanilla of it on his head.</p>
+				<h4>Chelsea</h4>
+				<p>Chelsea, who grew up in Georgia, knows that ice cream is the best way to beat the heat, and sometimes nothing can beat some good old-fashioned flavors done right. </p>
+				<h4>Gwen</h4>
+				<p>Gwen's our head driver, from Lexington, MA, and she's been with us from the beginning. Ask her anything about how we make our ice cream. She knows it, and she often makes it!</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn" data-dismiss="modal">Close</button>
+			</div>
+		</div><!-- end modal content -->
+		</div><!-- end modal dialog -->
+	</div><!-- end modal -->
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
