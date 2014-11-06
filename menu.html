@@ -54,14 +54,14 @@
 					<div class="tab-pane fade active in" id="flavors">
 						<div class="row">
 							<div class="col-xs-6 col-md-6">
-								<div class="thumbnail">
+								<div class="thumbnail" id="vanilla">
 								<img src="images/vanilla.jpeg" alt="Vanilla" class="img-responsive"><!--image from www.chow.com-->
 									<div class="caption"><h3>Vanilla</h3><p>The basic, done just the way you dream about.</p></div>
 								</div>
 							</div>
 
 							<div class="col-xs-6 col-md-6">
-								<div class="thumbnail">
+								<div class="thumbnail" id="chocolate">
 								<img src="images/chocolate.jpeg" alt="chocolate" class="img-responsive"><!--www.chow.com-->
 									<div class="caption"><h3>Chocolate</h3><p>A rich, classic chocolate. Try it together with our vanilla!</p></div>
 								</div>
@@ -69,14 +69,14 @@
 						</div> <!--close row inside tab-->
 						<div class="row">
 							<div class="col-xs-6 col-md-6">	
-								<div class="thumbnail">
+								<div class="thumbnail" id="strawberry">
 								<img src="images/strawberry.jpg" alt="Strawberry" class="img-responsive"><!--www.tasteofhome.com-->
 									<div class="caption"><h3>Strawberry</h3><p>Fresh, creamy strawberries right on your tongue.</p></div>
 								</div>
 							</div>
 
 							<div class="col-xs-6 col-md-6">
-								<div class="thumbnail">
+								<div class="thumbnail" id="cinnamon">
 									<img src="images/cinnamon.jpeg" alt="Cinnamon" class="img-responsive"><!--www.chow.com-->
 										<div class="caption"><h3>Cinnamon</h3><p>For a little sweet spice to go with your cream.</p></div>
 								</div>
@@ -153,7 +153,7 @@
     					<h3 class="panel-title">The Best Ingredients</h3>
   					</div>
  					<div class="panel-body">
-    					<ul class="list-unstyled">
+    					<ul class="list-unstyled" id="ingredients">
 							<li><span class="glyphicon glyphicon-leaf"></span> Organic milk and cream bought from local farms</li>
 							<li><span class="glyphicon glyphicon-leaf"></span> No additive chemicals or food coloring</li>
 							<li><span class="glyphicon glyphicon-leaf"></span> Churned daily on site at our storefront</li>
@@ -191,6 +191,7 @@
 			$('.nav-tabs a:first').tab('show');
 		});
 	</script>
+	<script src="js/app.js"></script>
 
 </body>
 </html>

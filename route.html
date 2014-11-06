@@ -44,7 +44,7 @@
 		<article class="col-sm-8 col-md-7">
 			<h2>Route</h2>
 			<p>In addition to our store location at 1776 Americas Avenue, our trucks travel across Cambridge, bringing the goods to you! Circling between Harvard University, MIT, and Porter Square, we serve a large populus, and are looking to expand as well. We have several designated stops on our route:</p>
-				<ol>
+				<ol id="stops">
 					<li>Harvard University, 12:00-1:00, 6:15-8:00</li>
 					<li>Central Square, 1:15-2:00, 8:15-9:00</li>
 					<li>Portland St./Binney St., 2:15-3:00</li>
@@ -53,7 +53,9 @@
 				</ol>
 
 			<p>If you live within a one mile radius of our route, we deliver as well. Tel: 555-5555</p>
-			<figure>
+			<button type="button" class="btn btn-primary btn-small" id=
+			"viewmap">View Map</button>
+			<figure id="routeimg">
 				<img src="images/route.jpg" alt="Vanilla" class="img-responsive"/>
 			</figure>
 		</article>
@@ -63,11 +65,36 @@
 				<div class="panel-heading">
 			    	<h3 class="panel-title">Our Drivers</h3>
 			    </div>
-			  	<div class="panel-body">
+			  	<div class="panel-body" id="append">
 			    	<p>We take care of our drivers, and they take care of you. They're committed to safe driving, and keeping an on-time schedule. Look at the sign outside of our truck to see who's driving today, and meet them by reading their bios here:</p>
 					<p><button data-target="#drivers" class="btn btn-primary" data-toggle="modal">Read More</button></p>
 					<p>Want to become a driver or another part of our staff? Start your career with us today.</p>
-					<a href="#" class="btn btn-primary">Apply for a job</a>
+					<button type="button" class="btn btn-primary" id= "apply">Apply for a job</button>
+
+					<form>
+						<div class="form-group name-group">
+							<label for="name" class="control-label">Full Name* </label>
+							<input type="text" id="name" class="form-control">
+							<span class="help-block"></span>
+						</div>
+						<div class="form-group phone-group">
+							<label for="phone" class="control-label">Phone number* </label>
+							<input type="text" id="phone" class="form-control">
+							<span class="help-block"></span>
+						</div>
+						<div class="form-group email-group">
+							<label for="email" class="control-label">Email* </label>
+							<input type="text" id="email" class="form-control">
+							<span class="help-block"></span>
+						</div>
+						<div class="form-group resume-group">
+							<label for="resume" class="control-label">Paste your resume below:* </label>
+							<textarea id="resume" class="form-control"></textarea>
+							<span class="help-block"></span>
+						</div>
+						<button name="submit" class="btn btn-danger" type="submit" id="submit">Submit</button>
+					</form>
+
 			  	</div>
 			</div>			
 		</aside>
@@ -106,6 +133,6 @@
 <!-- javascript -->
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-
+	<script src="js/app.js"></script>
 </body>
 </html>
